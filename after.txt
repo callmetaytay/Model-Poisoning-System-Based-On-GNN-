@@ -1,0 +1,78 @@
+['node_features', 'node_labels', 'edges_src', 'edges_dst']
+(2708, 1433)
+Epoch 00000 | Step 00000 | Loss 1.9527 | Train Acc 0.0898 | Speed (samples/sec) nan
+C:\Users\tay\AppData\Roaming\Python\Python311\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+C:\Users\tay\AppData\Roaming\Python\Python311\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Epoch 0, Time(s):4.7057
+Epoch 00001 | Step 00000 | Loss 1.9328 | Train Acc 0.2969 | Speed (samples/sec) 22283.3636
+Epoch 1, Time(s):4.5177
+Epoch 00002 | Step 00000 | Loss 1.9179 | Train Acc 0.3398 | Speed (samples/sec) 15389.4960
+Epoch 2, Time(s):4.4392
+Epoch 00003 | Step 00000 | Loss 1.8857 | Train Acc 0.4180 | Speed (samples/sec) 13831.8261
+Epoch 3, Time(s):4.5591
+Epoch 00004 | Step 00000 | Loss 1.8306 | Train Acc 0.5195 | Speed (samples/sec) 13402.6159
+Epoch 4, Time(s):4.4684
+Epoch 00005 | Step 00000 | Loss 1.7987 | Train Acc 0.5117 | Speed (samples/sec) 12466.7684
+Epoch 5, Time(s):4.3689
+Train Acc 0.5577
+Test Acc: 0.5203
+Epoch 00006 | Step 00000 | Loss 1.7625 | Train Acc 0.5547 | Speed (samples/sec) 11876.3404
+Epoch 6, Time(s):4.4868
+Epoch 00007 | Step 00000 | Loss 1.7214 | Train Acc 0.5977 | Speed (samples/sec) 11281.3653
+Epoch 7, Time(s):4.4052
+Epoch 00008 | Step 00000 | Loss 1.7211 | Train Acc 0.5977 | Speed (samples/sec) 10937.2592
+Epoch 8, Time(s):4.4865
+Epoch 00009 | Step 00000 | Loss 1.6754 | Train Acc 0.6250 | Speed (samples/sec) 10897.6228
+Epoch 9, Time(s):4.5039
+Epoch 00010 | Step 00000 | Loss 1.6610 | Train Acc 0.6250 | Speed (samples/sec) 11078.6789
+Epoch 10, Time(s):4.5311
+Train Acc 0.7101
+Test Acc: 0.6033
+Epoch 00011 | Step 00000 | Loss 1.6152 | Train Acc 0.6797 | Speed (samples/sec) 11530.5602
+Epoch 11, Time(s):5.4358
+Epoch 00012 | Step 00000 | Loss 1.6101 | Train Acc 0.6328 | Speed (samples/sec) 11295.8454
+Epoch 12, Time(s):6.4842
+Epoch 00013 | Step 00000 | Loss 1.5955 | Train Acc 0.6797 | Speed (samples/sec) 10716.7261
+Epoch 13, Time(s):6.8796
+Epoch 00014 | Step 00000 | Loss 1.6179 | Train Acc 0.6523 | Speed (samples/sec) 10467.9987
+Epoch 14, Time(s):5.1294
+Epoch 00015 | Step 00000 | Loss 1.5652 | Train Acc 0.7031 | Speed (samples/sec) 10637.3532
+Epoch 15, Time(s):4.9068
+Train Acc 0.7595
+Test Acc: 0.6531
+Epoch 00016 | Step 00000 | Loss 1.5493 | Train Acc 0.7031 | Speed (samples/sec) 10703.4085
+Epoch 16, Time(s):4.4580
+Epoch 00017 | Step 00000 | Loss 1.5460 | Train Acc 0.7070 | Speed (samples/sec) 10853.2698
+Epoch 17, Time(s):4.5011
+Epoch 00018 | Step 00000 | Loss 1.5388 | Train Acc 0.6914 | Speed (samples/sec) 11071.0677
+Epoch 18, Time(s):4.5220
+Epoch 00019 | Step 00000 | Loss 1.4969 | Train Acc 0.7578 | Speed (samples/sec) 11234.1755
+Epoch 19, Time(s):4.6098
+Epoch 00020 | Step 00000 | Loss 1.5384 | Train Acc 0.7461 | Speed (samples/sec) 11126.7322
+Epoch 20, Time(s):4.4103
+Train Acc 0.7849
+Test Acc: 0.6679
+Epoch 00021 | Step 00000 | Loss 1.4612 | Train Acc 0.7773 | Speed (samples/sec) 11056.3456
+Epoch 21, Time(s):4.4622
+Epoch 00022 | Step 00000 | Loss 1.4831 | Train Acc 0.7461 | Speed (samples/sec) 10955.4348
+Epoch 22, Time(s):4.4614
+Epoch 00023 | Step 00000 | Loss 1.4542 | Train Acc 0.8086 | Speed (samples/sec) 10843.3722
+Epoch 23, Time(s):4.5212
+Epoch 00024 | Step 00000 | Loss 1.4832 | Train Acc 0.7539 | Speed (samples/sec) 10914.7587
+Epoch 24, Time(s):4.5545
+Epoch 00025 | Step 00000 | Loss 1.4630 | Train Acc 0.7891 | Speed (samples/sec) 11130.2759
+Epoch 25, Time(s):4.5029
+Train Acc 0.8153
+Test Acc: 0.6937
+Epoch 00026 | Step 00000 | Loss 1.4563 | Train Acc 0.7891 | Speed (samples/sec) 11183.6154
+Epoch 26, Time(s):4.5513
+Epoch 00027 | Step 00000 | Loss 1.4604 | Train Acc 0.7734 | Speed (samples/sec) 11233.6999
+Epoch 27, Time(s):4.5078
+Epoch 00028 | Step 00000 | Loss 1.4416 | Train Acc 0.8164 | Speed (samples/sec) 11346.7039
+Epoch 28, Time(s):4.4459
+Epoch 00029 | Step 00000 | Loss 1.4124 | Train Acc 0.8477 | Speed (samples/sec) 11334.4588
+Epoch 29, Time(s):4.3990
+Final Train Acc 0.8647
+Final Test Acc 0.7306
