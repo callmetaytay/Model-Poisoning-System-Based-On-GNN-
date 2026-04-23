@@ -37,14 +37,6 @@ pip install -r requirements.txt
 - `gensim 4.3.3`
 - `tqdm 4.66.5`
 
-如果还没有这个环境，可以这样创建：
-
-```bash
-python3.11 -m venv .venv311
-.venv311/bin/pip install --upgrade pip setuptools wheel packaging
-.venv311/bin/pip install -r requirements.txt
-```
-
 注意：
 
 - 不建议使用 Python `3.14` 运行这个项目，DGL 在该版本上容易出现安装和导入问题
