@@ -8,10 +8,7 @@
 
 页面支持：
 
-- 选择标签中毒 / 特征中毒
-- 配置中毒率与中毒节点数
 - 查看攻击前后准确率、鲁棒性、检测率
-- 查看图结构中毒节点高亮
 - 查询单节点标签、预测、度数、特征统计
 - 查看实验历史记录
 
@@ -20,8 +17,7 @@
 ### 1. 安装依赖
 
 ```bash
-cd /Users/tay/Desktop/poison
-.venv311/bin/pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 推荐在 Apple Silicon Mac 上使用 `Python 3.11` 虚拟环境运行本项目。
@@ -41,11 +37,10 @@ cd /Users/tay/Desktop/poison
 - `gensim 4.3.3`
 - `tqdm 4.66.5`
 
-如果你还没有这个环境，可以这样创建：
+如果还没有这个环境，可以这样创建：
 
 ```bash
-cd /Users/tay/Desktop/poison
-/opt/homebrew/bin/python3.11 -m venv .venv311
+python3.11 -m venv .venv311
 .venv311/bin/pip install --upgrade pip setuptools wheel packaging
 .venv311/bin/pip install -r requirements.txt
 ```
@@ -59,8 +54,7 @@ cd /Users/tay/Desktop/poison
 ### 2. 启动后端
 
 ```bash
-cd /Users/tay/Desktop/poison
-.venv311/bin/python backend.py
+python backend.py
 ```
 
 默认地址：
@@ -70,8 +64,7 @@ cd /Users/tay/Desktop/poison
 ### 3. 启动前端网站
 
 ```bash
-cd /Users/tay/Desktop/poison
-.venv311/bin/streamlit run app.py
+/streamlit run app.py
 ```
 
 默认地址：
@@ -88,40 +81,3 @@ cd /Users/tay/Desktop/poison
 - `GET /api/node-info/{node_id}`：节点详情
 - `POST /api/attack`：执行一次中毒实验
 - `POST /api/reset`：清空实验历史
-
-## 说明
-
-当前网站更偏“实验展示平台”而不是完整论文复现实验框架：
-
-- 标签中毒会修改节点标签后重新评估
-- 特征中毒会向节点特征注入噪声后重新评估
-
-## 环境自检
-
-安装完成后，可以先执行：
-
-```bash
-cd /Users/tay/Desktop/poison
-.venv311/bin/python - <<'PY'
-import torch
-import torchdata
-import dgl
-import yaml
-print("torch:", torch.__version__)
-print("torchdata:", torchdata.__version__)
-print("dgl:", dgl.__version__)
-print("yaml ok")
-PY
-```
-
-预期至少应看到：
-
-- `torch: 2.3.0`
-- `torchdata: 0.9.0`
-- `dgl: 2.2.1`
-- `yaml ok`
-
-如果你下一步想继续，我可以直接帮你再做两种升级：
-
-1. 接入你真实的中毒训练脚本，让网站按钮直接触发真实训练与保存结果
-2. 把 Streamlit 改成前后端分离网页，比如 `Vue/React + FastAPI`
